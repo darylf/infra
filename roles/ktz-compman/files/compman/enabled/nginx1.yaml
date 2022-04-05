@@ -1,0 +1,9 @@
+---
+version: "2"
+services:
+  nginx1:
+    image: nginx
+    container_name: nginx1
+    ports:
+      - 38080:80
+    restart: unless-stopped

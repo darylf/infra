@@ -41,6 +41,8 @@
         tags: compose
       - role: ktz-autorestic
         tags: replication
+      - role: ktz-compman
+        tags: compman
 
   - hosts: pennywise
     vars_files:

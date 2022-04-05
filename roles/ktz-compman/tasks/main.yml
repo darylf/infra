@@ -1,0 +1,15 @@
+---
+
+- debug: msg={{ lookup('fileglob', 'compman/enabled/*.yaml') }}
+
+- name: read in all files in enabled dir
+  debug: msg="{{ item }}"
+  with_fileglob:
+    - "compman/enabled/*.yaml"
+
+
+# - name: render compose file
+
+
+
+# - name: output rendered compose file

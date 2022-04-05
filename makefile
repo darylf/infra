@@ -31,6 +31,9 @@ mrepl:
 mcomp:
 	ansible-playbook run.yaml --limit morpheus --tags compose
 
+compman:
+	ansible-playbook -b run.yaml --limit morpheus --tags compman
+
 p:
 	ansible-playbook -b run.yaml --limit pennywise
 
