@@ -23,3 +23,7 @@
     path: /etc/sudoers
     line: "{{ main_username }} ALL=(ALL) NOPASSWD: /usr/sbin/zfs,/usr/sbin/zpool"
   become: true
+
+- debug:
+    msg: "{{ lookup('bitwarden', '09767edf-04e7-4d0c-9e10-ab420111b486') }}"
+  tags: bw

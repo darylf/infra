@@ -70,6 +70,8 @@
     vars_files:
       - 'vars/vault.yaml'
     roles:
+      - role: ansible-modules-bitwarden
+        tags: bw
       - role: artis3n.tailscale
       - role: grog.package
       - role: ironicbadger.proxmox_nag_removal
@@ -122,3 +124,7 @@
     tasks:
       - hostname:
           name: "vpnwd"
+
+  - hosts: localhost
+    roles:
+      - ansible-modules-bitwarden

@@ -13,6 +13,7 @@
 - src: ironicbadger.snapraid
 - src: ironicbadger.proxmox_nag_removal
 
+- src: git+https://github.com/c0sco/ansible-modules-bitwarden
 - src: weareinteractive.environment
 
 # - src: geerlingguy.docker
